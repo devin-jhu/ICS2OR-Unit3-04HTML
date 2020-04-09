@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="trapezoid area">
+    <meta name="keywords" content="trapezoid,area">
+    <meta name="author" content="devin-jhu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trapezoid Area</title>
+  </head>
+  <body>
+    Base One (top): <input type="number" id="txtbox" value="put number here"><br>
+    Base Two (bottom): <input type="number" id="txtboxone" value="put number here"><br>
+    Height: <input type="number" id="txtboxtwo" value="put number here">
+    <p>Insert two base lengths so the top and bottom of the trapezoid and finally add the height of the trapezoid make sure to use the height not the angled side.</p>
+    <button onclick="textBox()">calculate</button>
+    <script>
+      let BaseOne;
+      let BaseTwo;
+      let Height;
+      let trapezoidArea;
+      
+      function textBox() {
+      BaseOne= document.getElementById("txtbox")
+      BaseTwo= document.getElementById("txtboxone")
+      Height= document.getElementById("txtboxtwo").value;
+      trapezoidArea= ((BaseOne + BaseTwo) / 2)* Height;
+      alert ("The trapezoid area is " + trapezoidArea);
+      }
+    </script>
+  </body>
+</html>
